@@ -1,11 +1,9 @@
 def fizzbuzz(value)
-  toReturn = ''
-  if value % 3 == 0
-    toReturn = "Fizz"
+  if value % 3 == 0 && value % 5 == 0
+    "FizzBuzz"
   elsif value % 5 == 0
-    toReturn += "Buzz"
-  else
-    toReturn = nil
+    "Buzz"
+  elsif value % 3 == 0
+    "Fizz"
   end
-  return toReturn
 end
